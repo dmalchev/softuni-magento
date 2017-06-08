@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<layout>
+    <adminhtml_softuni_dimomalchev_dimomalchev_index>
+        <reference name="content">
+            <block type="softuni_dimomalchev/adminhtml_dimomalchev" name="softuni_dimomalchev.dimomalchev"/>
+        </reference>
+    </adminhtml_softuni_dimomalchev_dimomalchev_index>
+    
+    <adminhtml_softuni_dimomalchev_dimomalchev_new>
+        <reference name="content">
+            <update handle="softuni_dimomalchev_dimomalchev_edit"/>
+        </reference>
+    </adminhtml_softuni_dimomalchev_dimomalchev_new>
+    
+    <adminhtml_softuni_dimomalchev_dimomalchev_edit>
+        <reference name="content">
+            <block type="softuni_dimomalchev/adminhtml_dimomalchev_edit" name="softuni_dimomalchev.dimomalchev.edit"/>
+        </reference>
+    </adminhtml_softuni_dimomalchev_dimomalchev_edit>
+</layout>

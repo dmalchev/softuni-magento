@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <softuni_dimomalchev_form_index>
+        <reference name="content">
+            <block type="softuni_dimomalchev/form" name="softuni_dimomalchev.form" template="softuni/dimomalchev/form.phtml">
+            </block>
+        </reference>
+    </softuni_dimomalchev_form_index>
+</layout>

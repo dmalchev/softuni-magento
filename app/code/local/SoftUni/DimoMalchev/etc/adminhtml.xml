@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <softuni_dimomalchev translate="title" module="softuni_dimomalchev">
+            <title>Dimo Malchev</title>
+            <sort_order>60</sort_order>
+            <action>adminhtml/softuni_dimomalchev_dimomalchev/index</action>
+        </softuni_dimomalchev>
+    </menu>
+    
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <softuni_dimomalchev translate="title" module="softuni_dimomalchev">
+                        <title>Dimo Malchev</title>
+                        <sort_order>60</sort_order>
+                    </softuni_dimomalchev>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

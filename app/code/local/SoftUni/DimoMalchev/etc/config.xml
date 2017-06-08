@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SoftUni_DimoMalchev>
+            <version>1.0.0</version>
+        </SoftUni_DimoMalchev>
+    </modules>
+    
+    <global>
+        <helpers>
+            <softuni_dimomalchev>
+                <class>SoftUni_DimoMalchev_Helper</class>
+            </softuni_dimomalchev>
+        </helpers>
+        
+        <blocks>
+            <softuni_dimomalchev>
+                <class>SoftUni_DimoMalchev_Block</class>
+            </softuni_dimomalchev>
+        </blocks>
+        
+        <models>
+            <softuni_dimomalchev>
+                <class>SoftUni_DimoMalchev_Model</class>
+                <resourceModel>softuni_dimomalchev_resource</resourceModel>
+            </softuni_dimomalchev>
+            <softuni_dimomalchev_resource>
+                <class>SoftUni_DimoMalchev_Model_Resource</class>
+                <entities>
+                    <dimomalchev>
+                        <table>softuni_dimomalchev_dimomalchev</table>
+                    </dimomalchev>
+                </entities>
+            </softuni_dimomalchev_resource>
+        </models>
+        
+        <resources>
+            <softuni_dimomalchev_setup>
+                <setup>
+                    <module>SoftUni_DimoMalchev</module>
+                </setup>
+            </softuni_dimomalchev_setup>
+        </resources>
+    </global>
+    
+    <frontend>
+        <routers>
+            <softuni_dimomalchev>
+                <use>standard</use>
+                <args>
+                    <module>SoftUni_DimoMalchev</module>
+                    <frontName>softuni_dimomalchev</frontName>
+                </args>
+            </softuni_dimomalchev>
+        </routers>
+        <translate>
+            <modules>
+                <SoftUni_DimoMalchev>
+                    <files>
+                        <default>SoftUni_DimoMalchev.csv</default>
+                    </files>
+                </SoftUni_DimoMalchev>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <softuni_dimomalchev module="SoftUni_DimoMalchev">
+                    <file>softuni_dimomalchev.xml</file>
+                </softuni_dimomalchev>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <softuni_dimomalchev before="Mage_Adminhtml">SoftUni_DimoMalchev</softuni_dimomalchev>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <SoftUni_DimoMalchev>
+                    <files>
+                        <default>SoftUni_DimoMalchev.csv</default>
+                    </files>
+                </SoftUni_DimoMalchev>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <softuni_dimomalchev module="SoftUni_DimoMalchev">
+                    <file>softuni_dimomalchev.xml</file>
+                </softuni_dimomalchev>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
